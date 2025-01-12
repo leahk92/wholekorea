@@ -1,0 +1,80 @@
+
+/* 인트로 추가 수정 부분 */
+/* 메인 비주얼 */
+main {
+   width: 100%;
+}
+.mainVisual,
+.main-section-end {
+   width: 100%;
+   height: 100%;
+}
+.mainVisual > img,
+.main-section-end > img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.mainCopy,
+.joinCopy {
+   text-align: center;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.mainCopy p,
+.joinCopy p {
+   margin: 0 auto;
+   position: relative;
+}
+.mainCopy p:first-child {
+   max-width: 550px;
+   font-size: 4.5rem;
+   font-weight: 700;
+   margin-bottom: 10%;
+}
+.mainCopy p:last-child::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -200%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: #f7941f;
+}
+.mainCopy p:last-child,
+.joinCopy p:nth-child(2) {
+   font-size: 1.5rem;
+   font-style: italic;
+   font-weight: 250;
+}
+/* 마지막 Join the Journey */
+.main-section-end {
+   margin-bottom: 4rem;
+   position: relative;
+}
+.joinCopy p:first-child {
+   max-width: 600px;
+   font-size: 4rem;
+   font-weight: 700;
+}
+.joinCopy p:nth-child(2) {
+   font-size: 1.3rem;
+   margin-top: 10px;
+}
+.regiBtn {
+   margin: 3rem auto 0;
+   background-color: #f7941f;
+   border-radius: 30px;
+   width: 120px;
+   height: 40px;
+   line-height: 40px;
+}
+.regiBtn > a {
+   color: #fff;
+}

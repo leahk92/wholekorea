@@ -1,0 +1,406 @@
+      <div class="main-section-01">
+         <div class="wholekorea-introduction">
+            <!-- <div class="intro-left">
+               <div class="intro-copy">
+                  <p>
+                     WHY CHOOSE <br />
+                     <span>WHOLEKOREA?</span>
+                  </p>
+                  <p class="copy-web">
+                     With over 10 years of experience,<br />
+                     we are a trusted and stable Korean buying agent<br />
+                     committed to providing reliable service.
+                  </p>
+                  <p class="copy-mobile">
+                     With over 10 years of experience,<br />
+                     we are a trusted and stable Korean buying agent committed
+                     to providing reliable service.
+                  </p>
+               </div>
+               <div class="intro-strength">
+                  <ul>
+                     <li>
+                        <img src="./image/noFee(2).png" alt="no fee image" />
+                        <p>no storage fees</p>
+                     </li>
+                     <li>
+                        <img src="./image/noFee(2).png" alt="no fee image" />
+                        <p>no agent fees</p>
+                     </li>
+                     <li>
+                        <img src="./image/lowFee(2).png" alt="low fee image" />
+                        <p>low shipping fees</p>
+                     </li>
+                  </ul>
+               </div>
+            </div> -->
+            <div class="intro-right">
+               <div class="intro-business">
+                  <ul>
+                     <li>
+                        <a
+                           href="https://wholekorea.com/whatWeOffer/what-we-offer.html"
+                        >
+                           <div class="intro-business-img">
+                              <img
+                                 src="./image/01OurBusiness.png"
+                                 alt="What We Offer"
+                              />
+                           </div>
+                           <div class="intro-business-desc">
+                              <p class="desc-subTitle">WHAT WE OFFER</p>
+                              <div class="moreInfo">
+                                 m o r e<i class="fa-solid fa-angle-right"></i>
+                              </div>
+                              <div class="desc-subContent">
+                                 <p>
+                                    <i class="fa-solid fa-cart-shopping"></i
+                                    >Sourcing Korean Products
+                                 </p>
+                                 <p>
+                                    <i class="fa-solid fa-cart-shopping"></i
+                                    >Purchasing Service
+                                 </p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://wholekorea.com/howToOrder/how-to-order.html"
+                        >
+                           <div class="intro-business-img">
+                              <img
+                                 src="./image/02howToUse.png"
+                                 alt="How to Order"
+                              />
+                           </div>
+                           <div class="intro-business-desc">
+                              <p class="desc-subTitle">HOW TO ORDER</p>
+                              <div class="moreInfo">
+                                 m o r e<i class="fa-solid fa-angle-right"></i>
+                              </div>
+                              <div class="desc-subContent">
+                                 <p>
+                                    Shop on our website and <br />
+                                    simply order the items you want!
+                                 </p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://koreapopstore.com/index.html"
+                           target="_blank"
+                        >
+                           <div class="intro-business-img">
+                              <img
+                                 src="./image/03kPopWholesale(4).png"
+                                 alt="korea pop store"
+                              />
+                           </div>
+                           <div class="intro-business-desc">
+                              <p class="desc-subTitle">K-POP WHOLESALE</p>
+                              <div class="moreInfo">
+                                 v i s i t
+                                 <i class="fa-solid fa-angle-right"></i>
+                              </div>
+                              <div class="desc-subContent">
+                                 <p>Korea’s Largest K-pop Online Store</p>
+                                 <p>CD/DVD/Light Stick/Merchandise</p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+/* 웹 - 인트로 좌측 */
+/* 인트로 copy */
+.wholekorea-introduction .intro-copy p {
+   text-align: center;
+}
+.wholekorea-introduction .intro-copy p:first-child {
+   color: #04267c;
+   font-size: 2.8rem;
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   line-height: 1.2;
+   margin-bottom: 15px;
+}
+.wholekorea-introduction .intro-copy span {
+   font-weight: 750;
+}
+.intro-copy p.copy-web {
+   font-size: 1.2rem;
+}
+.intro-copy p.copy-web,
+.intro-copy p.copy-mobile {
+   color: #888888;
+   font-weight: 500;
+}
+.intro-copy p.copy-mobile {
+   font-size: 1.1rem;
+   display: none;
+}
+/* 인트로 copy 아이콘 */
+.intro-strength {
+   margin-top: 15%;
+}
+.intro-strength ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
+}
+.intro-strength li img {
+   display: block;
+   margin: 0 auto 1.35rem;
+   width: 80px;
+}
+.intro-strength ul li p {
+   padding: 10px 20px;
+   background: #f7941f;
+   border-radius: 5px;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 500;
+   color: #fff;
+}
+/* 웹 - 인트로 우측 */
+/* 인트로 하부 business */
+.intro-business ul li {
+   width: 650px;
+   height: 200px;
+   background-color: #f3f6ff;
+   border-radius: 20px;
+   box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.25);
+   margin: 35px 0;
+}
+.intro-business ul li a {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   border-radius: 20px;
+}
+.intro-business ul li a:hover {
+   text-decoration: none;
+   background: #8ccbff;
+   transition: 0.3s;
+}
+.intro-business ul li a:hover .desc-subContent p {
+   color: #fff;
+   transition: 0.1s;
+}
+.intro-business-img {
+   width: 33%;
+   text-align: center;
+}
+.intro-business-img img {
+   width: 135px;
+}
+
+.intro-business-desc {
+   width: 67%;
+   position: relative;
+}
+.intro-business-desc .moreInfo {
+   display: inline-block;
+   position: absolute;
+   top: 5px;
+   right: 35px;
+   font-size: 0.8rem;
+   font-weight: 500;
+   padding: 6px 10px 7px;
+   background: #04267c;
+   color: #fff;
+   border-radius: 5px;
+}
+.intro-business > ul > li:last-child .moreInfo {
+   background: #db3939;
+}
+.intro-business ul li:last-child a:hover {
+   background: #ffccd7;
+}
+.intro-business-desc .moreInfo i {
+   padding-left: 5px;
+   font-size: 0.75rem;
+}
+.intro-business-desc .desc-subTitle {
+   font-size: 1.4rem;
+   color: #04267c;
+   font-weight: 750;
+}
+.intro-business-desc .desc-subTitle::after {
+   content: '';
+   display: block;
+   width: 100%;
+   border-bottom: 1px solid #7d7d7d;
+   padding-bottom: 25px;
+}
+.intro-business ul li a:hover .desc-subTitle::after {
+   border-bottom: 1px solid #fff;
+   transition: 0.2s;
+}
+.intro-business-desc .desc-subContent i {
+   margin-right: 10px;
+}
+.intro-business-desc .desc-subContent p {
+   font-weight: 700;
+   font-size: 1.1rem;
+   color: #929292;
+   letter-spacing: 0.2px;
+   padding-bottom: 0.625rem;
+}
+.intro-business-desc .desc-subContent p:first-child {
+   margin-top: 1rem;
+}
+/* 반응형 */
+@media screen and (max-width: 1440px) {
+   .wholekorea-introduction {
+      padding: 0 10px;
+   }
+   .wholekorea-introduction .intro-copy p:first-child {
+      font-size: 2.5rem;
+   }
+   .intro-business-desc .moreInfo {
+      font-size: 0.85rem;
+   }
+}
+@media screen and (max-width: 1200px) {
+   .wholekorea-introduction {
+      flex-direction: column;
+      margin: 5rem 0;
+   }
+   .intro-copy p.copy-web {
+      display: none;
+   }
+   .intro-copy p.copy-mobile {
+      display: block;
+      max-width: 600px;
+      padding: 0 10px;
+   }
+   .wholekorea-introduction .intro-right {
+      margin-top: 3rem;
+   }
+}
+@media screen and (max-width: 768px) {
+   .intro-business ul li {
+      width: 670px;
+   }
+}
+@media screen and (max-width: 687px) {
+   .intro-business ul li {
+      width: 650px;
+   }
+}
+
+@media screen and (max-width: 663px) {
+   .intro-business ul li {
+      width: 600px;
+   }
+   .intro-business-desc .moreInfo {
+      display: none;
+   }
+}
+@media screen and (max-width: 600px) {
+   .intro-business ul li {
+      width: 550px;
+   }
+   .intro-business-desc .desc-subTitle {
+      font-size: 1.2rem;
+   }
+   .intro-business-img {
+      width: 30%;
+   }
+   .intro-business-img img {
+      width: 120px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .wholekorea-introduction {
+      margin: 3rem 0;
+   }
+   .wholekorea-introduction .intro-copy p:first-child {
+      font-size: 2rem;
+   }
+   .intro-strength ul li p {
+      font-size: 0.9rem;
+      font-weight: 650;
+      padding: 8px 10px;
+   }
+   .intro-strength ul {
+      gap: 4%;
+   }
+   .intro-strength li img {
+      width: 70px;
+   }
+   .wholekorea-introduction .intro-right {
+      margin-top: 2rem;
+   }
+   .intro-business-desc .desc-subTitle::after {
+      padding-bottom: 18px;
+   }
+   .intro-business ul li {
+      width: 400px;
+      height: auto;
+   }
+   .intro-business ul li a {
+      flex-direction: column;
+      padding: 25px 0;
+   }
+   .intro-business-img {
+      margin-bottom: 10px;
+      width: 100%;
+   }
+   .intro-business-desc {
+      width: 87%;
+   }
+   .intro-business-desc .desc-subTitle {
+      text-align: center;
+   }
+   .intro-business-desc .desc-subContent p {
+      font-size: 0.95rem;
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .wholekorea-introduction .intro-copy p:first-child {
+      font-size: 1.8rem;
+   }
+   .intro-copy p.copy-mobile {
+      font-size: 0.95rem;
+      font-weight: 600;
+   }
+   .intro-business ul li {
+      width: 350px;
+   }
+   .intro-strength ul {
+      padding: 0 10px;
+   }
+}
+@media screen and (max-width: 375px) {
+   .intro-strength {
+      margin: 15% auto 0;
+   }
+   .intro-strength ul {
+      gap: 3%;
+   }
+   .intro-strength ul li p {
+      padding: 7px;
+   }
+}
+@media screen and (max-width: 320px) {
+   .intro-business ul li {
+      width: 280px;
+   }
+   .intro-business-desc .desc-subContent p {
+      font-size: 0.9rem;
+   }
+}

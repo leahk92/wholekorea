@@ -1,0 +1,112 @@
+<!--@layout(/layout/basic/main.html)-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+ />
+
+<div module="Layout_Dummy">
+    <!--@css(/jwgbox/jwgcss/mainSection01.css)-->
+
+    <!-- 메인 슬라이드 아랫부분 (소개 영역) -->
+     
+ <!-- 메인 비주얼 -->
+    <main>
+      <div class="mainVisual">
+        <div class="mainText">
+          <p class="mainText-ttl">
+            Bringing Korea<br />
+            <span>to the World</span>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="main-section-01">
+      <div class="wholekorea-introduction">
+        <div class="intro-left">
+          <div class="intro-copy">
+            <p>
+              WHY CHOOSE <br />
+              <span>WHOLEKOREA?</span>
+            </p>
+            <p class="copy-web">
+              With over 10 years of experience,<br />
+              we are a trusted and stable<br />
+              Korean buying agent committed to providing reliable service.
+            </p>
+            <p class="copy-mobile">
+              With over 10 years of experience,<br />
+              we are a trusted and stable Korean buying agent committed to
+              providing reliable service.
+            </p>
+          </div>
+          <div class="intro-strength">
+            <ul>
+              <li>
+                <img src="/images/noFee(2).png" alt="no fee image" />
+                <p>no storage fees</p>
+              </li>
+              <li>
+                <img src="/images/noFee(2).png" alt="no fee image" />
+                <p>no agent fees</p>
+              </li>
+              <li>
+                <img src="/images/lowFee(2).png" alt="low fee image" />
+                <p>low shipping fees</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="intro-right">
+          <div class="intro-business">
+            <ul>
+              <li>
+                <a href="https://wholekorea.com/jwgbox/add_page/location.html#location_link">
+                  <div class="intro-business-img">
+                    <img src="/images/01OurBusiness.png" alt="What We Offer" />
+                  </div>
+                  <div class="intro-business-desc">
+                    <p class="desc-subTitle">WHAT WE OFFER</p>
+                    <div class="moreInfo">
+                      more<i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="desc-subContent">
+                      <p>
+                        <i class="fa-solid fa-cart-shopping"></i>Sourcing Korean Products
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-cart-shopping"></i>Purchasing
+                        Service
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://wholekorea.com/jwgbox/add_page/store_list.html#store_list_link">
+                  <div class="intro-business-img">
+                    <img src="/images/02howToUse.png" alt="How to Order" />
+                  </div>
+                  <div class="intro-business-desc">
+                    <p class="desc-subTitle">HOW TO ORDER</p>
+                    <div class="moreInfo">
+                      more<i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="desc-subContent">
+                      <p>
+                        Shop on our website and <br />
+                        simply order the items you want!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+
+</div>

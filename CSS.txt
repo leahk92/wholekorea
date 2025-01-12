@@ -1,0 +1,338 @@
+
+/* 메인 비주얼 */
+main {
+  width: 100%;
+}
+.mainVisual {
+  position: relative;
+  width: 100%;
+  min-height: 28rem;
+  background-color: #f3f6ff;
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "DynaPuff", system-ui; */
+  background: url(/images/mainVisual02.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainVisual .mainText {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+.mainVisual .mainText-ttl {
+  font-size: 2rem;
+  font-weight: 900;
+  max-width: 50px;
+  color: #ffb22c;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* 시작 */
+.main-section-01 {
+  width: 100%;
+  /* margin: 0 auto; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.wholekorea-introduction {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  margin: 7rem 0;
+}
+
+/* 웹 - 인트로 좌측 */
+/* 인트로 copy */
+.wholekorea-introduction .intro-copy {
+}
+
+.wholekorea-introduction .intro-copy p {
+  text-align: center;
+}
+.wholekorea-introduction .intro-copy p:first-child {
+  color: #04267c;
+  font-size: 2.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.wholekorea-introduction .intro-copy span {
+  font-weight: 750;
+}
+.intro-copy p.copy-web,
+.intro-copy p.copy-mobile {
+  color: #a3a3a3;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.intro-copy p.copy-mobile {
+  display: none;
+}
+/* 인트로 copy 아이콘 */
+.intro-strength {
+  margin-top: 15%;
+}
+.intro-strength ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.intro-strength li img {
+  display: block;
+  margin: 0 auto 1.35rem;
+  width: 80px;
+}
+.intro-strength ul li p {
+  padding: 10px 20px;
+  background: #f7941f;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 웹 - 인트로 우측 */
+/* 인트로 하부 business */
+.intro-business ul li {
+  width: 750px;
+  height: 265px;
+  background-color: #f3f6ff;
+  border-radius: 20px;
+  box-shadow: 6px 7px 15px 0px rgba(0, 0, 0, 0.25);
+  margin: 50px 0;
+}
+
+.intro-business ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+}
+.intro-business ul li a:hover {
+  text-decoration: none;
+  background: #8ccbff;
+  transition: 0.3s;
+}
+
+.intro-business ul li a:hover .desc-subContent p {
+  color: #fff;
+  transition: 0.1s;
+}
+
+.intro-business-img {
+  width: 33%;
+  text-align: center;
+}
+.intro-business-img img {
+  width: 180px;
+}
+
+.intro-business-desc {
+  width: 67%;
+  position: relative;
+}
+.intro-business-desc .moreInfo {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  font-size: 0.9rem;
+  font-weight: 550;
+  padding: 5px 10px;
+  background: #04267c;
+  color: #fff;
+  border-radius: 5px;
+}
+.intro-business-desc .moreInfo i {
+  padding-left: 5px;
+}
+
+.intro-business-desc .desc-subTitle {
+  font-size: 1.8rem;
+  color: #04267c;
+  font-weight: 750;
+}
+.intro-business-desc .desc-subTitle::after {
+  content: "";
+  display: block; /* 블록 요소로 설정하여 너비가 적용되도록 */
+  width: 100%; /* 너비를 100%로 설정 */
+  border-bottom: 1px solid #7d7d7d;
+  padding-bottom: 25px;
+}
+.intro-business ul li a:hover .desc-subTitle::after {
+  border-bottom: 1px solid #fff;
+  transition: 0.2s;
+}
+
+.intro-business-desc .desc-subContent i {
+  margin-right: 10px;
+}
+.intro-business-desc .desc-subContent p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #7d7d7d;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.625rem;
+}
+.intro-business-desc .desc-subContent p:first-child {
+  margin-top: 1.1rem;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1440px) {
+  .wholekorea-introduction {
+    padding: 0 20px;
+  }
+  .wholekorea-introduction .intro-copy p:first-child {
+    font-size: 2.5rem;
+  }
+
+  .intro-business ul li {
+    width: 700px;
+  }
+    .intro-business-img img {
+    width: 165px;
+}
+  .intro-business-desc .desc-subTitle {
+    font-size: 1.5rem;
+  }
+  .intro-business-desc .moreInfo {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wholekorea-introduction {
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+
+  .intro-copy p.copy-web {
+    display: none;
+  }
+  .intro-copy p.copy-mobile {
+    display: block;
+    max-width: 600px;
+  }
+  .wholekorea-introduction .intro-right {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-business ul li {
+    width: 670px;
+  }
+  .intro-business-img img {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 687px) {
+  .intro-business ul li {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 663px) {
+  .intro-business ul li {
+    width: 600px;
+  }
+  .intro-business-img img {
+    width: 150px;
+  }
+  .intro-business-desc .moreInfo {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro-business ul li {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainVisual .mainText {
+    max-width: 40px;
+    left: 10%;
+  }
+  .wholekorea-introduction {
+    margin: 3rem 0;
+  }
+  .wholekorea-introduction .intro-copy p:first-child {
+    font-size: 2rem;
+  }
+  .intro-strength ul li p {
+    font-size: 0.9rem;
+    font-weight: 650;
+    padding: 8px 10px;
+  }
+  .intro-strength ul {
+    gap: 4%;
+  }
+  .intro-strength li img {
+    width: 70px;
+  }
+
+  .wholekorea-introduction .intro-right {
+    margin-top: 2rem;
+  }
+  .intro-business ul li {
+    width: 400px;
+    height: auto;
+  }
+  .intro-business ul li a {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .intro-business-img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .intro-business-desc {
+    width: 80%;
+  }
+  .intro-business-desc .desc-subTitle {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .intro-business-desc .desc-subContent p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wholekorea-introduction .intro-copy p:first-child {
+    font-size: 1.8rem;
+  }
+  .intro-copy p.copy-mobile {
+    color: #a3a3a3;
+    font-size: 0.9rem;
+  }
+  .intro-business ul li {
+    width: 350px;
+  }
+    .intro-strength ul {
+      padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro-strength {
+    margin: 15% auto 0;
+  }
+  .intro-strength ul {
+    gap: 3%;
+  }
+  .intro-strength ul li p {
+    padding: 7px;
+  }
+}
