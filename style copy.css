@@ -81,7 +81,6 @@ main {
 }
 
 /* 섹션 01 비주얼 - our미션*/
-
 section {
    width: 100%;
    color: #111222;
@@ -91,21 +90,20 @@ section {
    width: 100%;
 }
 .sec-01 .container .content {
-   width: 100%;
+   width: 95%;
    margin: 0 auto;
    display: flex;
    justify-content: flex-start;
-   align-items: stretch;
+   align-items: center;
    /*  */
    position: relative;
 }
 .sec-01 .content .image {
-   margin-right: 30px;
    /* position: relative;
    width: 65%;
    height: 700px;
    overflow: hidden; */
-   height: 750px;
+
    width: 65%;
 
    overflow: hidden;
@@ -122,57 +120,42 @@ section {
    object-fit: cover;
 }
 .sec-01 .content .text-box {
-   position: relative;
-   flex: 0.7;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-
-   /* position: absolute;
+   position: absolute;
    top: 45%;
-   right: 10%; */
+   /* transform: translateY(-50%); */
+   right: 10%;
    /*  */
-   /* width: 29rem;
+   width: 29rem;
    padding: 3em;
-   z-index: 222; */
+   z-index: 222;
+   background: rgba(255, 138, 0, 0.75);
+   backdrop-filter: blur(30px);
+   border-radius: 20px;
    /* transform: translate(-100px, 130px); */
 }
 .sec-01 .content .text-box p:first-child {
-   /* color: #333; */
-   color: #dfe1e5;
-   /* opacity: 0.2; */
-   font-size: 4.5em;
-   font-weight: 700;
+   margin-bottom: 4.5em;
+   color: #333;
+   opacity: 0.9;
+   font-size: 1.3em;
+   font-weight: 750;
 }
 .sec-01 .content .text-box p:last-child {
-   position: absolute;
-   bottom: 0;
-   background-color: #f7941f;
-   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
-   padding: 1.5em;
-   /* backdrop-filter: blur(30px); */
-   border-radius: 10px;
-
-   color: rgba(255, 255, 255, 1);
-
-   font-size: 2em;
-   font-weight: 500;
-   letter-spacing: 1px;
+   color: #fff;
+   font-size: 1.5em;
+   font-weight: 600;
    line-height: 1.4;
-}
-.boxBorder {
-   border: 0.1rem solid currentcolor;
-   position: absolute;
-   inset: 0px;
-   z-index: 1;
 }
 .sec-01 .content .text-box span {
    margin-right: 5px;
 }
 
 /* 섹션 01 콘텐츠 내비 */
-.cttsNavi-container {
+.cttsNavi-wrapper {
    width: 100%;
+   background-color: #f3f6ff;
+}
+.cttsNavi-container {
    margin-bottom: 7rem;
    display: flex;
    justify-content: center;
@@ -381,32 +364,25 @@ section {
       font-size: 1.15em;
    }
    /* 섹션 01 */
-   .sec-01 .content .image {
-      width: 67%;
-      height: auto;
-   }
-   .sec-01 .content .text-box p:first-child {
-      font-size: 4em;
-   }
-   .sec-01 .content .text-box p:last-child {
-      width: 370px;
-      font-size: 1.7em;
-      padding: 1.5em 2.5em 1.5em 1.5em;
-   }
-
-   /* .sec-01 .content .text-box {
+   .sec-01 .content .text-box {
       transform: translate(-90px, 130px);
       width: 26rem;
    }
    .sec-01 .content .text-box p:first-child {
       font-size: 1.2em;
       margin-bottom: 3.5em;
-   } */
+   }
 
+   .sec-01 .content .image {
+      width: 85%;
+   }
+   .sec-01 .content .image img {
+      left: 30px;
+   }
    .cttsNavi-container .descBox {
       width: 82%;
    }
-
+   .sec-01 .content .text-box p:last-child,
    .cttsNavi-container .descTitle {
       font-size: 1.35em;
    }
@@ -424,15 +400,23 @@ section {
 
 @media screen and (max-width: 1366px) {
    /* 섹션 01 */
+   .sec-01 .content .text-box {
+      width: 20rem;
+   }
    .sec-01 .container {
-      /* padding: 7rem 0 1rem; */
+      padding: 7rem 0 1rem;
    }
    .sec-01 .content .image img {
-      /* height: 600px; */
+      height: 600px;
    }
-
+   .sec-01 .content .text-box p:first-child {
+      font-size: 1.1em;
+   }
+   .sec-01 .content .text-box p:last-child {
+      font-size: 1.2em;
+   }
    .descImage img {
-      width: 100px;
+      width: 99px;
    }
    .cttsNavi-container .descBox {
       width: 85%;
@@ -454,16 +438,9 @@ section {
       font-size: 1.05em;
    }
    /* 섹션 01 */
-   .sec-01 .content .image {
-      width: 67%;
-   }
-   .sec-01 .content .text-box p:first-child {
-      font-size: 3.7em;
-   }
-   .sec-01 .content .text-box p:last-child {
-      width: 370px;
-      font-size: 1.5em;
-      padding: 1.7em 2.5em 1.7em 1.5em;
+
+   .sec-01 .content .text-box {
+      transform: translate(-90px, 90px);
    }
 
    .cttsNavi-container .descBox {
@@ -478,6 +455,9 @@ section {
    .cttsNavi-container ul li:last-child .descText p:first-child {
       font-size: 0.95rem;
    }
+   .descImage img {
+      width: 100px;
+   }
 }
 @media screen and (max-width: 1200px) {
    .mainCopy p:first-child {
@@ -487,15 +467,31 @@ section {
       font-size: 1em;
    }
    /* 섹션 01 */
-   .sec-01 .content .image {
-      margin-right: 20px;
+   .sec-01 .container .content {
+      flex-direction: column;
+      position: relative;
+   }
+
+   .sec-01 .content .text-box {
+      position: absolute;
+      top: 53%;
+      transform: translateX(-50%);
+      left: 50%;
+      width: 60%;
+      padding: 2.5em;
    }
    .sec-01 .content .text-box p:first-child {
-      font-size: 3.5em;
+      margin-bottom: 2.5em;
+   }
+   .sec-01 .content .image img {
+      left: 0;
+   }
+   .sec-01 .content .text-box p:first-child {
+      font-size: 1.05em;
    }
    .sec-01 .content .text-box p:last-child {
-      width: 350px;
-      font-size: 1.3em;
+      font-size: 1.35em;
+      text-align: center;
    }
 
    .cttsNavi-container ul li a {
@@ -524,29 +520,13 @@ section {
       margin-bottom: 5.5%;
    }
    /* 섹션 01 */
-
-   .sec-01 .content .text-box p:first-child {
-      font-size: 3.3em;
-   }
-   .sec-01 .content .text-box p:last-child {
-      width: 310px;
-      font-size: 1.15em;
-      padding: 1.5em;
-   }
-
    .cttsNavi-container .descTitle {
       font-size: 1.2rem;
    }
 }
 @media screen and (max-width: 1024px) {
-   .sec-01 .content .text-box p:first-child {
-      font-size: 3.1em;
-      margin: auto 0;
-   }
-   .sec-01 .content .text-box p:last-child {
-      width: 300px;
-      font-size: 1.05em;
-      padding: 2em 2.5em 2em 2em;
+   .sec-01 .content .image {
+      width: 90%;
    }
 }
 
@@ -554,27 +534,11 @@ section {
    .mainCopy p:first-child {
       margin-bottom: 6%;
    }
-   /* 섹션 01 */
    .sec-01 .container {
-      padding: 0 2rem 7rem;
-   }
-   .sec-01 .container .content {
-      flex-direction: column;
-   }
-   .sec-01 .content .text-box {
-      flex-direction: row;
-      margin-top: 50px;
+      padding: 7rem 0 0;
    }
    .sec-01 .content .image img {
       height: auto;
-   }
-   .sec-01 .content .image {
-      width: 100%;
-      margin: 0 auto;
-   }
-   .sec-01 .content .text-box p:last-child {
-      position: static;
-      font-size: 1.15em;
    }
 }
 
@@ -586,7 +550,9 @@ section {
       margin-bottom: 7%;
    }
    /* 섹션 01 */
-
+   .sec-01 .content .image {
+      width: 100%;
+   }
    .cttsNavi-container .descTitle {
       font-size: 1.1rem;
    }
@@ -605,96 +571,83 @@ section {
 
 @media screen and (max-width: 667px) {
    .mainCopy p:first-child {
-      margin-bottom: 8%;
+      font-size: 3.3em;
    }
-
-   .mainCopy p:last-child::before {
-      width: 1.35em;
-      height: 1.35em;
+   .mainCopy p:first-child {
+      margin-bottom: 8.5%;
+   }
+   .mainCopy p:last-child {
+      font-size: 0.9em;
    }
    /* 섹션 01 */
-   .sec-01 .content .text-box p:first-child {
-      font-size: 2.9em;
+
+   /* .sec-01 .container {
+      padding: 1rem;
+   } */
+   .sec-01 .content .image img {
+      /* height: 450px; */
    }
-   .sec-01 .content .text-box p:last-child {
-      width: 300px;
-      font-size: 1.05em;
+   .sec-01 .container {
+      padding: 4rem 0 0;
    }
 }
 
 @media screen and (max-width: 600px) {
-   .mainCopy p:first-child {
-      max-width: 450px;
-      font-size: 3.2em;
-      margin-bottom: 8.5%;
-   }
-   .mainCopy p:last-child::before {
-      width: 1.3em;
-      height: 1.3em;
-      bottom: 145%;
-   }
-   .mainCopy p:last-child {
-      max-width: 350px;
-   }
-   /* 섹션 01 */
-   /*** 600px 아래부터 세로로 ***/
-   .cttsNavi-container ul {
-      flex-direction: column;
-   }
-   .cttsNavi-container ul li {
-      width: 100%;
-      border-bottom: 1px solid #bbb;
-   }
-   .cttsNavi-container ul li:last-child {
-      border-bottom: none;
-   }
-   .cttsNavi-container ul li:nth-child(2) a {
-      border-left: none;
-      border-right: none;
-   }
-   .cttsNavi-container .descBox .desc {
-      border-top: none;
-   }
    .cttsNavi-container .descTitle {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
    }
-   .cttsNavi-container .descText p {
-      font-size: 1rem;
+   .sec-01 .container {
+      padding: 0.3rem;
+   }
+   .sec-01 .content .text-box p:last-child {
+      font-size: 1.3em;
+   }
+   .descImage {
+      width: 30%;
    }
    .descImage img {
       width: 120px;
    }
 }
 @media screen and (max-width: 480px) {
-   .mainCopy p:first-child {
-      font-size: 3em;
+   /* .sec-01 .content .image img {
+      height: 300px;
+   } */
+   .cttsNavi-container .descBox .descTitle::after {
+      padding-bottom: 18px;
    }
-   .mainCopy p:last-child {
-      font-size: 0.95em;
+   .cttsNavi-container ul li {
+      width: 400px;
+      height: auto;
    }
-   .mainCopy p:last-child::before {
-      bottom: 130%;
+   .cttsNavi-container ul li a {
+      /* flex-direction: column; */
+      padding: 25px 0;
+   }
+   .descImage {
+      margin-bottom: 10px;
+      width: 100%;
+   }
+   .cttsNavi-container .descBox {
+      width: 87%;
+   }
+   .cttsNavi-container .descBox .descTitle {
+      text-align: center;
+   }
+   .cttsNavi-container .descBox .desc p {
+      font-size: 0.95rem;
    }
 }
 
 @media screen and (max-width: 425px) {
-   .mainCopy p:first-child {
-      font-size: 2.7em;
-      margin-bottom: 10%;
-   }
-   .mainCopy p:last-child {
-      font-size: 0.9em;
-   }
-   /* 섹션 01 */
    .sec-01 .content .text-box {
       width: 65%;
    }
+   .cttsNavi-container ul li {
+      width: 350px;
+   }
 }
 @media screen and (max-width: 375px) {
-   .mainCopy p:first-child {
-      font-size: 2.5em;
-   }
-   /* 섹션 01 */
    .sec-01 .content .text-box p:first-child {
       font-size: 1em;
    }
@@ -703,7 +656,10 @@ section {
    }
 }
 @media screen and (max-width: 320px) {
-   .mainCopy p:first-child {
-      margin-bottom: 11.5%;
+   .cttsNavi-container ul li {
+      width: 280px;
+   }
+   .cttsNavi-container .descBox .desc p {
+      font-size: 0.9rem;
    }
 }
