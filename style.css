@@ -573,7 +573,7 @@ section {
       padding: 1rem;
    } */
    .sec-01 .content .image img {
-      height: 450px;
+      /* height: 450px; */
    }
    .sec-01 .container {
       padding: 4rem 0 0;
