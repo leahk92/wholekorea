@@ -124,7 +124,7 @@ section {
 }
 .sec-01 .content .text-box p:first-child {
    color: rgba(247, 148, 31, 0.95);
-   font-size: 4em;
+   font-size: 3.5em;
    font-weight: 800;
 }
 .sec-01 .content .text-box p:last-child {
@@ -157,8 +157,7 @@ section {
    justify-content: center;
    align-items: center;
    /* background: #f3f6ff; */
-   /* background: rgba(247, 148, 31, 0.9); */
-   background-color: #dfe1e5;
+   background: #fff;
 }
 .cttsNavi-container ul {
    display: flex;
@@ -190,25 +189,21 @@ section {
 }
 .cttsNavi-container ul li a:hover {
    text-decoration: none;
-   background: #8ccbff;
+   background: rgba(247, 148, 31, 0.9);
    transition: 0.2s;
 }
 .cttsNavi-container ul li a:hover .descBox .desc {
    border-top: none;
    transition: 0.2s;
 }
-.cttsNavi-container ul li:last-child a:hover {
+/* .cttsNavi-container ul li:last-child a:hover {
    background: #ffccd7;
    transition: 0.2s;
-}
+} */
 
 .cttsNavi-container ul li a:hover .descTitle {
-   color: #04267c;
-   font-weight: 700;
+   color: #fff;
    transition: 0.1s;
-}
-.cttsNavi-container ul li:last-child a:hover .descTitle {
-   color: #db3939;
 }
 .cttsNavi-container ul li a:hover .desc p {
    font-weight: 500;
@@ -267,69 +262,60 @@ section {
 
 /* 섹션 02 수출 국가 */
 .sec-02 {
+   padding: 5rem 0;
    margin-bottom: 100px;
-   /* background-color: #cbcbcb; */
+   /* background-color: #f3f6ff; */
+   background-color: #f8f8f8;
    text-align: center;
 }
 .sec-02 .container {
    padding: 50px 0;
-   /* overflow: hidden; */
-   background-color: #111222;
+   /* background-color: #cbcbcb; */
    margin: 0 auto;
    /* height: 500px; */
-   /* position: relative;
-   margin: 0 auto;
-   overflow: hidden;
-   width: 90%;height: 500px; */
+   /* position: relative; */
 }
 .sec-02-copy {
    margin-bottom: 30px;
-   font-size: 2rem;
+   font-size: 2em;
    font-weight: 700;
 }
 /* .slides */
 .nationBox {
    width: 80%;
-
-   /* overflow: hidden; */
-
-   /* width: 100%; */
    margin: 0 auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 5%;
 }
-/* .nationBox > div {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 3%;
-} */
-.sec-02 .controls .arr {
-   cursor: pointer;
-   /* background-color: #fff;
-    border-radius: 48px;
-    display: inline-block;
-    font-size: 0;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    width: 48px; */
-}
-.sec-02 .controls .arr img {
-   display: block;
-   width: 30px;
-}
+
 .nationList {
-   width: 300px;
+   margin: 0 1em;
+   padding: 2.5em;
+   /* position: relative; */
 }
-.nationList img {
-   width: 100px;
-}
+
 .nationList .nation {
-   margin-top: 10px;
-   color: #fff;
+   margin-top: 15px;
+}
+/* 화살표 */
+.sec-02 .nationBox .slick-arrow {
+   position: absolute;
+   top: -95px;
+   text-indent: -9999px;
+   outline: none;
+   border: 2px solid #1a1a1a;
+   /* background-color: #1a1a1a; */
+}
+.sec-02 .nationBox .slick-arrow.slick-prev {
+   background: url('../image/prev.png') no-repeat 40% 50%;
+   left: 0%;
+   padding: 18px 33px;
+   background-size: 32px;
+}
+
+.sec-02 .nationBox .slick-arrow.slick-next {
+   background: url('../image/next.png') no-repeat 50% 50%;
+   right: 1%;
+   padding: 18px 33px;
+   background-size: 32px;
 }
 
 /* 반응형 */
@@ -340,9 +326,17 @@ section {
    .mainCopy p:last-child {
       font-size: 1.3em;
    }
-
+   /* 섹션 01 */
    .cttsNavi-container ul {
       width: 95%;
+   }
+   /* 섹션 02 */
+   .nationList {
+      padding: 1em;
+      margin: 0 2em;
+   }
+   .nationBox {
+      width: 90%;
    }
 }
 @media screen and (max-width: 1600px) {
@@ -351,6 +345,11 @@ section {
    }
    .cttsNavi-container .descBox {
       width: 80%;
+   }
+
+   .nationList {
+      padding: 0.5em;
+      margin: 0 3em;
    }
 }
 
@@ -386,9 +385,11 @@ section {
    .cttsNavi-container ul li:last-child .descText p:first-child {
       font-size: 1rem;
    }
-
    .descImage img {
       width: 102px;
+   }
+   .nationList {
+      padding: 0;
    }
 }
 
@@ -418,7 +419,7 @@ section {
       width: 67%;
    }
    .sec-01 .content .text-box p:first-child {
-      font-size: 3.7em;
+      font-size: 3em;
    }
    .sec-01 .content .text-box p:last-child {
       font-size: 1.5em;
@@ -436,6 +437,10 @@ section {
    .cttsNavi-container ul li:last-child .descText p:first-child {
       font-size: 0.95rem;
    }
+
+   .sec-02-copy {
+      font-size: 1.8em;
+   }
 }
 @media screen and (max-width: 1200px) {
    .mainCopy p:first-child {
@@ -447,9 +452,6 @@ section {
    /* 섹션 01 */
    .sec-01 .content .image {
       margin-right: 20px;
-   }
-   .sec-01 .content .text-box p:first-child {
-      font-size: 3.5em;
    }
    .sec-01 .content .text-box p:last-child {
       font-size: 1.3em;
@@ -481,9 +483,6 @@ section {
       margin-bottom: 5.5%;
    }
    /* 섹션 01 */
-   .sec-01 .content .text-box p:first-child {
-      font-size: 3.3em;
-   }
    .sec-01 .content .text-box p:last-child {
       font-size: 1.15em;
       padding: 1.5em;
@@ -539,7 +538,6 @@ section {
       margin-bottom: 7%;
    }
    /* 섹션 01 */
-
    .cttsNavi-container .descTitle {
       font-size: 1.1rem;
    }
@@ -553,6 +551,10 @@ section {
 
    .cttsNavi-container .descText p {
       font-size: 0.8rem;
+   }
+   /* 섹션 02 */
+   .sec-02-copy {
+      font-size: 1.5em;
    }
 }
 
@@ -666,6 +668,7 @@ section {
    .sec-01 .content .text-box p:last-child {
       font-size: 1em;
    }
+   /* 섹션 02 */
 }
 
 @media screen and (max-width: 425px) {
@@ -687,6 +690,10 @@ section {
    .sec-01 .content .text-box p:last-child {
       width: 57%;
    }
+   /* 섹션 02 */
+   .sec-02-copy {
+      font-size: 1.3em;
+   }
 }
 @media screen and (max-width: 375px) {
    .mainCopy p:first-child {
@@ -702,6 +709,9 @@ section {
    }
    .cttsNavi-container ul li:last-child a {
       padding-bottom: 75px;
+   }
+   .sec-02-copy {
+      font-size: 1.15em;
    }
 }
 @media screen and (max-width: 320px) {
