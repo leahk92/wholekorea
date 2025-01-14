@@ -28,7 +28,6 @@ button {
    all: unset;
    cursor: pointer;
 }
-/* 인트로 추가 수정 부분 시작 */
 /* 메인 비주얼 */
 main {
    width: 100%;
@@ -60,7 +59,12 @@ main {
    font-size: 4.5em;
    font-weight: 700;
    margin-bottom: 4%;
-   /* margin-bottom: 1.1em; */
+
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.65s;
+   transition: 0s;
 }
 .mainCopy p:last-child::before {
    content: '';
@@ -73,11 +77,31 @@ main {
    height: 1.4em;
    border-radius: 50%;
    background-color: #f7941f;
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.95s;
+   transition: 0s;
 }
 .mainCopy p:last-child {
    font-size: 1.4em;
    font-style: italic;
    font-weight: 250;
+   opacity: 0;
+   transform: translateY(1rem);
+   animation: FadeInUp 1s ease-in-out 1 forwards;
+   animation-delay: 0.95s;
+   transition: 0s;
+}
+@keyframes FadeInUp {
+   0% {
+      opacity: 0;
+      transform: translateY(1rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
 
 /* 섹션 01 비주얼 - our미션*/
