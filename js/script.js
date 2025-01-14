@@ -5,12 +5,12 @@ $('.nationBox').slick({
    speed: 500,
    autoplay: true,
    autoplaySpeed: 5000,
-   slidesToShow: 6,
+   slidesToShow: 7,
    //fade: true,
    adaptiveHeight: true,
    responsive: [
       {
-         breakpoint: 1200,
+         breakpoint: 1440,
          settings: {
             slidesToShow: 5,
          },
@@ -24,7 +24,7 @@ $('.nationBox').slick({
       {
          breakpoint: 640,
          settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             arrows: false,
          },
       },

@@ -158,6 +158,8 @@ section {
    align-items: center;
    /* background: #f3f6ff; */
    background: #fff;
+   border-top: 1px solid #333;
+   border-bottom: 1px solid #333;
 }
 .cttsNavi-container ul {
    display: flex;
@@ -184,8 +186,8 @@ section {
    /* border-radius: 20px; */
 }
 .cttsNavi-container ul li:nth-child(2) a {
-   border-right: 1px solid #bbb;
-   border-left: 1px solid #bbb;
+   border-right: 1px solid #333;
+   border-left: 1px solid #333;
 }
 .cttsNavi-container ul li a:hover {
    text-decoration: none;
@@ -223,13 +225,12 @@ section {
    border-bottom: none;
    transition: 0.3s;
 }
-
 .cttsNavi-container .descBox .desc {
    display: flex;
    gap: 5%;
    align-items: center;
    padding-top: 25px;
-   border-top: 1px solid #bbb;
+   border-top: 1px solid #333;
    height: 9em;
 }
 .cttsNavi-container .descText {
@@ -280,16 +281,16 @@ section {
    font-size: 2em;
    font-weight: 700;
 }
-/* .slides */
+
 .nationBox {
    width: 80%;
    margin: 0 auto;
+   text-align: center;
 }
 
 .nationList {
-   margin: 0 1em;
-   padding: 2.5em;
-   /* position: relative; */
+   margin: 0 1.5em;
+   padding: 2em;
 }
 
 .nationList .nation {
@@ -298,24 +299,23 @@ section {
 /* 화살표 */
 .sec-02 .nationBox .slick-arrow {
    position: absolute;
-   top: -95px;
+   top: -125px;
    text-indent: -9999px;
    outline: none;
-   border: 2px solid #1a1a1a;
    /* background-color: #1a1a1a; */
 }
 .sec-02 .nationBox .slick-arrow.slick-prev {
-   background: url('../image/prev.png') no-repeat 40% 50%;
-   left: 0%;
-   padding: 18px 33px;
-   background-size: 32px;
+   background: url('../image/prev.png') no-repeat 50% 50%;
+   background-size: 29px;
+   left: 0;
+   padding: 15px 30px;
 }
 
 .sec-02 .nationBox .slick-arrow.slick-next {
    background: url('../image/next.png') no-repeat 50% 50%;
-   right: 1%;
-   padding: 18px 33px;
-   background-size: 32px;
+   background-size: 29px;
+   right: 0;
+   padding: 15px 30px;
 }
 
 /* 반응형 */
@@ -346,10 +346,9 @@ section {
    .cttsNavi-container .descBox {
       width: 80%;
    }
-
    .nationList {
-      padding: 0.5em;
       margin: 0 3em;
+      padding: 0;
    }
 }
 
@@ -389,7 +388,7 @@ section {
       width: 102px;
    }
    .nationList {
-      padding: 0;
+      padding: 0.5em;
    }
 }
 
@@ -437,9 +436,12 @@ section {
    .cttsNavi-container ul li:last-child .descText p:first-child {
       font-size: 0.95rem;
    }
-
+   /* 섹션 02 */
    .sec-02-copy {
       font-size: 1.8em;
+   }
+   .nationList {
+      margin: 0 2em;
    }
 }
 @media screen and (max-width: 1200px) {
@@ -473,9 +475,18 @@ section {
    .descImage {
       margin: 9px 0;
    }
-
    .descImage img {
       width: 120px;
+   }
+   /* 섹션 02 */
+   .sec-02 .nationBox .slick-arrow {
+      top: -121px;
+   }
+   .sec-02 .nationBox .slick-arrow.slick-prev {
+      background-size: 25px;
+   }
+   .sec-02 .nationBox .slick-arrow.slick-next {
+      background-size: 25px;
    }
 }
 @media screen and (max-width: 1080px) {
@@ -556,6 +567,15 @@ section {
    .sec-02-copy {
       font-size: 1.5em;
    }
+   .sec-02 .nationBox .slick-arrow {
+      top: -118px;
+   }
+   .sec-02 .nationBox .slick-arrow.slick-prev {
+      background-size: 23px;
+   }
+   .sec-02 .nationBox .slick-arrow.slick-next {
+      background-size: 23px;
+   }
 }
 
 @media screen and (max-width: 667px) {
@@ -574,6 +594,10 @@ section {
    .sec-01 .content .text-box p:last-child {
       /* width: 300px; */
       font-size: 1.05em;
+   }
+   /* 섹션 02 */
+   .nationList {
+      margin: 0px 1.5em;
    }
 }
 
@@ -604,7 +628,7 @@ section {
    }
    .cttsNavi-container ul li {
       width: 100%;
-      border-bottom: 1px solid #bbb;
+      border-bottom: 1px solid #333;
    }
    .cttsNavi-container ul li:last-child {
       border-bottom: none;
@@ -629,17 +653,19 @@ section {
    .cttsNavi-container .descTitle {
       font-size: 1.3rem;
       margin: 0;
-      padding: 10px;
-      background: #fff;
-      border: 1px rgba(0, 0, 0, 0.1);
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
    }
    .cttsNavi-container .descText p {
       font-size: 1rem;
    }
    .descImage img {
       width: 120px;
+   }
+   /* 섹션 02 */
+   .nationList {
+      padding: 0;
+   }
+   .nationList .nation {
+      font-size: 0.85rem;
    }
 }
 @media screen and (max-width: 480px) {
@@ -669,6 +695,9 @@ section {
       font-size: 1em;
    }
    /* 섹션 02 */
+   .nationList {
+      margin: 0 1em;
+   }
 }
 
 @media screen and (max-width: 425px) {
