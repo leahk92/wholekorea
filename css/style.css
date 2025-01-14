@@ -157,7 +157,7 @@ section {
    background-color: rgba(247, 148, 31, 0.9);
    color: #fff;
    padding: 1.5em;
-   border-radius: 10px;
+   border-radius: 15px;
    font-size: 1.8em;
    font-weight: 700;
    letter-spacing: 1px;
@@ -176,7 +176,7 @@ section {
 /* 섹션 01 콘텐츠 내비 */
 .cttsNavi-container {
    width: 100%;
-   margin-bottom: 7rem;
+   /* margin-bottom: 7rem; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -215,18 +215,14 @@ section {
 }
 .cttsNavi-container ul li a:hover {
    text-decoration: none;
-   background: rgba(247, 148, 31, 0.9);
+   /* background: rgba(247, 148, 31, 0.9); */
+   background: #111222;
    transition: 0.2s;
 }
 .cttsNavi-container ul li a:hover .descBox .desc {
    border-top: none;
    transition: 0.2s;
 }
-/* .cttsNavi-container ul li:last-child a:hover {
-   background: #ffccd7;
-   transition: 0.2s;
-} */
-
 .cttsNavi-container ul li a:hover .descTitle {
    color: #fff;
    transition: 0.1s;
@@ -234,6 +230,7 @@ section {
 .cttsNavi-container ul li a:hover .desc p {
    font-weight: 500;
    transition: 0.1s;
+   color: #fff;
 }
 
 .cttsNavi-container .descBox {
@@ -275,10 +272,10 @@ section {
    padding: 0 3px;
    background-color: #0cca66;
    color: #fff;
-   font-weight: 700;
+   font-weight: 600;
    font-size: 1.05rem;
    color: #fff;
-   /* border-radius: 5px; */
+   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .descImage img {
@@ -287,7 +284,7 @@ section {
 
 /* 섹션 02 수출 국가 */
 .sec-02 {
-   padding: 5rem 0;
+   padding: 5rem 0 4rem;
    margin-bottom: 100px;
    /* background-color: #f3f6ff; */
    background-color: #f8f8f8;
@@ -658,7 +655,7 @@ section {
       border-bottom: none;
    }
    .cttsNavi-container ul li a {
-      padding: 30px;
+      padding: 35px 0;
    }
    .cttsNavi-container ul li:nth-child(2) a {
       border-left: none;
@@ -675,7 +672,7 @@ section {
       border-top: none;
    }
    .cttsNavi-container .descTitle {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin: 0;
    }
    .cttsNavi-container .descText p {
@@ -685,6 +682,9 @@ section {
       width: 120px;
    }
    /* 섹션 02 */
+   .sec-02 .container {
+      padding: 30px 0;
+   }
    .nationList {
       padding: 0;
    }
@@ -719,6 +719,9 @@ section {
       font-size: 1em;
    }
    /* 섹션 02 */
+   .sec-02 {
+      padding: 4rem 0 3rem;
+   }
    .nationList {
       margin: 0 1em;
    }
@@ -747,6 +750,9 @@ section {
    .sec-02-copy {
       font-size: 1.3em;
    }
+   .sec-02 .container {
+      padding: 20px 0;
+   }
 }
 @media screen and (max-width: 375px) {
    .mainCopy p:first-child {
@@ -763,6 +769,10 @@ section {
    .cttsNavi-container ul li:last-child a {
       padding-bottom: 75px;
    }
+   /* 섹션 02 */
+   .sec-02 {
+      padding: 3.5rem 0 2.5rem;
+   }
    .sec-02-copy {
       font-size: 1.15em;
    }
@@ -772,6 +782,12 @@ section {
       margin-bottom: 11.5%;
    }
    /* 섹션 01 */
+   .cttsNavi-container ul li:last-child a {
+      padding-bottom: 50px;
+   }
+   .cttsNavi-container ul li a {
+      padding: 30px 0;
+   }
    .sec-01 .content .text-box p:last-child {
       font-size: 0.95rem;
    }
@@ -781,4 +797,5 @@ section {
    .cttsNavi-container .descText p {
       font-size: 0.95rem;
    }
+   /* 섹션 02 */
 }
